@@ -13,8 +13,6 @@ body{
   background:#fff;
   color:var(--text);
 }
-
-/* ---------- Layout ---------- */
 .titulo{
   text-align:center;
   font-size:22px;
@@ -34,8 +32,6 @@ body{
 @media (max-width:600px){
   .cards{grid-template-columns:1fr;}
 }
-
-/* ---------- Card ---------- */
 .card{
   display:block;
   text-decoration:none;
@@ -53,13 +49,10 @@ body{
   box-shadow:var(--shadow);
 }
 
-/* Flip 180° izquierda → derecha */
 .card:hover .inner,
 .card:focus-visible .inner{
   transform:rotateY(-180deg);
 }
-
-/* Caras: misma imagen y tinte en ambas; contenido centrado */
 .face{
   position:absolute;
   inset:0;
@@ -97,8 +90,6 @@ body{
 .back::after{
   background: var(--tint-back, var(--tint));
 }
-
-/* Texto */
 .card-title{
   margin:0;
   font-size:26px;
@@ -124,7 +115,6 @@ body{
   background-repeat:no-repeat;
   background-position:center;
   background-size:contain;
-  /* círculo blanco con flecha hueca */
   background-image:url("data:image/svg+xml;utf8,\
 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 56'>\
   <defs><mask id='m'>\
@@ -138,8 +128,6 @@ body{
   font-size:0;
   line-height:0;
 }
-
-/* -------- Botón del REVERSO tipo “LEARN MORE” -------- */
 .pill{
   margin-top:12px;
   padding:10px 16px;
@@ -157,8 +145,8 @@ body{
   transform:translateY(-1px);
 }
 
-/* Accesibilidad */
 .card:focus-visible{
   outline:3px solid #2b86ff;
   outline-offset:6px;
 }
+
