@@ -128,25 +128,6 @@ body{
   font-size:0;
   line-height:0;
 }
-.pill{
-  margin-top:12px;
-  padding:10px 16px;
-  border:2px solid #fff;
-  background:transparent;
-  color:#fff;
-  font-weight:800;
-  font-size:13px;
-  text-transform:uppercase;
-  letter-spacing:.4px;
-  transition:background .2s ease, transform .2s ease;
-}
-.pill:hover{
-  background:rgba(255,255,255,.15);
-  transform:translateY(-1px);
 }
 
-.card:focus-visible{
-  outline:3px solid #2b86ff;
-  outline-offset:6px;
-}
 
